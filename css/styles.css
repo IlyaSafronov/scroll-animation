@@ -19,3 +19,38 @@ body {
   font-size: 1.125rem;
   background-color: var(--clr-primary-800);
 }
+
+.tag-list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 1rem;
+  background: var(--clr-primary-400);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem  -0.25rem var(--clr-primary-900);
+}
+
+.scroller {
+  max-width: 600px;
+}
+
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+}
+
+.scroller[data-animated="true"] 
+.scroller__inner {
+  flex-wrap: nowrap;
+}
